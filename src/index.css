@@ -1,13 +1,62 @@
+/* Hide vertical scrollbar but keep scroll */
+html, body {
+  scrollbar-width: none;      /* Firefox */
+  -ms-overflow-style: none;   /* IE & Edge */
+}
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+.variable-proximity-demo {
+  font-family: 'Orbitron', sans-serif;
+}
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;              /* Chrome, Safari */
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color:black;
+}
+/* Hide desktop links on small screens */
+@media (max-width: 768px) {
+  nav div:nth-child(2) {
+    display: none !important;
+  }
+
+  nav div:nth-child(3) {
+    display: block !important;
+  }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Show hamburger on mobile */
+@media (max-width: 768px) {
+  nav div:nth-child(3) {
+    display: block !important;
+  }
+}
+nav {
+  box-sizing: border-box;
+}
+
+@media (max-width: 1000px) {
+  nav a {
+    font-size: 14px;
+  }
+}
+html, body {
+  margin: 0;
+  height: 100%;
+  overflow-x: hidden;
+}
+@media (max-width: 768px) {
+  .shuffle-parent {
+    letter-spacing: 1px;
+  }
+}
+a:hover {
+  color: #35f909;
+  transform: scale(1.2);
+}
+.app-content {
+  position: relative;
+  z-index: 1;
 }
