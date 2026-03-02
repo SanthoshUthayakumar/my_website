@@ -94,9 +94,10 @@ pauseBetweenAnimations={1}
   >
     <FaGithub />
   </a>
+  
 </div>
-       
-      </div>
+          </div>
+          
     </section>
   );
 }

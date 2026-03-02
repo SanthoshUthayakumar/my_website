@@ -17,14 +17,14 @@ function Project() {
       github: "https://github.com/SanthoshUthayakumar/Trustlocal",
     },
     {
-      title: "Loading",
+      title: "Portfolio",
       image: loading,
       description:
-        "Project in process",
+        "My Protfolio",
       github: "#",
     },
     {
-      title: "Threat Analyzer",
+      title: "Loading",
       image: loading,
       description:
         "Project in process",
