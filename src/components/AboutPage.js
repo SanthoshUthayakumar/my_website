@@ -3,7 +3,7 @@ import "./AboutPage.css";
 import profile from "../assets/Profile.png";
 import TiltedCard from "./TiltedCard";
 import ElectricBorder from "./ElectricBorder";
-import DomeGallery from "./DomeGallery";
+
 
 function AboutPage() {
   return (
