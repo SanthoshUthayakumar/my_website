@@ -117,7 +117,7 @@ const GooeyNav = ({
     }
   };
 
-  const handleKeyDown = (e, index) => {
+ /*const handleKeyDown = (e, index) => {
     if (e.key === 'Enter' || e.key === ' ') {
       e.preventDefault();
       const liEl = e.currentTarget.parentElement;
@@ -125,7 +125,7 @@ const GooeyNav = ({
         handleClick({ currentTarget: liEl }, index);
       }
     }
-  };
+  };*/
 
   useEffect(() => {
     if (!navRef.current || !containerRef.current) return;
