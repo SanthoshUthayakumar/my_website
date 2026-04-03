@@ -5,7 +5,11 @@
   position: relative;
   z-index: 1;
 }
-
+.contact-container a :hover{
+  transform: scale(1.05);
+  transition: all 0.3s linear;
+  color: rgb(120, 205, 244);
+}
 /* Layout */
 .contact-layout {
   display: grid;

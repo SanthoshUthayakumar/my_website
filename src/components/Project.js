@@ -5,7 +5,7 @@ import ElectricBorder from "./ElectricBorder";
 
 import trustlocal from "../assets/trustlocal.png";
 import loading from "../assets/loading.jpg";
-/*import threat from "../assets/threat.png";*/
+import Portfolio from "../assets/Portfolio.png";
 
 function Project() {
   const projects = [
@@ -18,7 +18,7 @@ function Project() {
     },
     {
       title: "Portfolio",
-      image: loading,
+      image: Portfolio,
       description:
         "My Protfolio",
       github: "#",

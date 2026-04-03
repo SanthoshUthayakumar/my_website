@@ -7,7 +7,7 @@
   isolation: isolate;
 }
 
-/* Canvas should fill container exactly */
+
 .eb-canvas {
   position: absolute;
   inset: 0;
@@ -17,14 +17,13 @@
   z-index: 2;
 }
 
-/* Content stays above canvas */
 .eb-content {
   position: relative;
   z-index: 3;
   border-radius: inherit;
 }
 
-/* Optional subtle glow layers */
+
 .eb-layers {
   position: absolute;
   inset: 0;
@@ -56,14 +55,14 @@
   position: relative;
   width: 100%;
   border-radius: 24px;
-  overflow: visible;       /* VERY IMPORTANT */
+  overflow: visible;       
 }
 
 .eb-canvas {
   position: absolute;
   inset: 0;
   pointer-events: none;
-  z-index: 3;              /* Above background */
+  z-index: 3;              
 }
 
 .eb-content {

@@ -112,14 +112,6 @@
   transform: scale(1.05);
   box-shadow: 0 0 15px rgba(0, 255, 255, 0.7);
 }
-
-/* ============================= */
-/* MOBILE OPTIMIZATION */
-/* ============================= */
-/* ============================= */
-/* EXTRA SMALL MOBILE VERSION */
-/* ============================= */
-
 @media (max-width: 768px) {
 
   .project-container {

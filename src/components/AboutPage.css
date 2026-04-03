@@ -10,12 +10,12 @@
 }
 /* Hide scrollbar but allow scroll */
 .about-container {
-  scrollbar-width: none;       /* Firefox */
-  -ms-overflow-style: none;    /* IE/Edge */
+  scrollbar-width: none;       
+  -ms-overflow-style: none;    
 }
 
 .about-container::-webkit-scrollbar {
-  display: none;               /* Chrome, Safari */
+  display: none;              
 }
 /* ================= TOP SECTION ================= */
 
@@ -77,15 +77,15 @@
 /* ================= GLASS CARD ================= */
 
 .glass-card {
-  padding: 30px;
+  padding: 20px;
   border-radius: 24px;
 
-  background: transparent;   /* ✅ no background */
-  backdrop-filter: none;     /* ✅ remove blur */
+  background: transparent;  
+  backdrop-filter: none;     
 
   border: none;
   box-shadow: none;
-
+  min-height: 100px;
   display: flex;
   flex-direction: column;
 }
@@ -105,16 +105,13 @@
   padding: 10px 0;
 }
 
-/* ================= RESPONSIVE ================= */
-
-/* Tablet */
 @media (max-width: 1024px) {
   .about-bottom {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* Mobile */
+
 @media (max-width: 768px) {
   .about-top {
     flex-direction: column;
@@ -128,5 +125,37 @@
   .about-image {
     max-width: 260px;
     height: 260px;
+  }
+}
+.about-title{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+
+.certificate-section{
+  margin-top: 80px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.certificate-section h2{
+  margin-bottom: 30px;
+  font-size: clamp(1.5rem,3vw,2.5rem);
+}
+
+.certificate-gallery{
+  width: 100%;
+  max-width: 1000px;
+  height: 500px;
+  margin: auto;
+}
+
+
+@media (max-width:768px){
+  .certificate-gallery{
+    height: 500px;
+
   }
 }

@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import "./ContactPage.css";
 import VariableProximity from "./VariableProximity";
 import ElectricBorder from "./ElectricBorder";
-import { FaInstagram, FaLinkedin, FaGithub, FaXTwitter } from "react-icons/fa6";
+import { FaInstagram, FaLinkedin, FaGithub, FaXTwitter, FaWhatsapp } from "react-icons/fa6";
 const styles = {
   socialContainer: {
     display: "flex",
@@ -20,7 +20,7 @@ const styles = {
 };
 function ContactPage() {
 
-  const containerRef = useRef(null);   // ✅ INSIDE component
+  const containerRef = useRef(null);   
 
   return (
     <section className="contact-container">
@@ -40,7 +40,7 @@ function ContactPage() {
               toFontVariationSettings="'wght' 1000, 'opsz' 40"
               containerRef={containerRef}
               radius={230}
-              falloff="exponential"   // ✅ Only one
+              falloff="exponential"  
             />
           </div>
         </div>
@@ -86,6 +86,12 @@ function ContactPage() {
         >
           <FaGithub />
         </a>
+         <a href="https://wa.me/8072409470?text=Hi%20I%20am%20interested%20to%20contact%20You"
+          
+          rel="noopener noreferrer"
+          style={styles.icon}>
+            <FaWhatsapp/>
+       </a>
       </div>
       
       {/* Email */}
@@ -95,7 +101,9 @@ function ContactPage() {
 
       {/* Phone */}
       <p className="contact-phone">
-        +91 8072409470
+        <a href="tel:+918072409470" >
+    📞 Call Now </a> 
+   
       </p>
 
     </div>
@@ -105,10 +113,8 @@ function ContactPage() {
       </div>
     {/* Footer */}
 <div className="contact-footer">
-  <h4><b>Universe Always Fall In Love With Stubborn Hearts</b></h4><br></br>
-  <p>
-    © {new Date().getFullYear()} Santhosh Uthayakumar. All Rights Reserved.
-  </p>
+  <h2><b>Universe Always Fall In Love With Stubborn Hearts</b></h2><br></br>
+  
 </div>
     </section>
   );

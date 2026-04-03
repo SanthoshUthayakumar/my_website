@@ -6,7 +6,7 @@ html, body {
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
 
 .variable-proximity-demo {
-  font-family: 'Orbitron', sans-serif;
+  font-family: 'Orbitron',system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 html::-webkit-scrollbar,
 body::-webkit-scrollbar {
@@ -18,20 +18,12 @@ body {
 }
 /* Hide desktop links on small screens */
 @media (max-width: 768px) {
-  nav div:nth-child(2) {
-    display: none !important;
-  }
-
-  nav div:nth-child(3) {
-    display: block !important;
-  }
+  
 }
 
 /* Show hamburger on mobile */
 @media (max-width: 768px) {
-  nav div:nth-child(3) {
-    display: block !important;
-  }
+  
 }
 nav {
   box-sizing: border-box;
@@ -52,9 +44,10 @@ html, body {
     letter-spacing: 1px;
   }
 }
-a:hover {
-  color: #35f909;
-  transform: scale(1.2);
+a{
+  color: white;
+  font-weight: 300;
+  text-decoration: none;
 }
 .app-content {
   position: relative;

@@ -1,0 +1,71 @@
+.navbar{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  padding:20px 5%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  backdrop-filter: blur(10px);
+  background: rgba(0,0,0,0.3);
+  z-index:1000;
+}
+
+.logo{
+  color:white;
+  font-size:25px;
+  font-weight:bold;
+}
+
+/* DESKTOP */
+
+.desktopNav{
+  display:flex;
+}
+
+/* HAMBURGER */
+
+.hamburger{
+  font-size:30px;
+  color:white;
+  cursor:pointer;
+}
+
+/* MOBILE MENU */
+
+.mobileMenu{
+  position:absolute;
+  top:70px;
+  right:20px;
+  background:rgba(0,0,0,0.95);
+  padding:20px;
+  border-radius:10px;
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+}
+
+.mobileLink{
+  color:white;
+  font-size:18px;
+  cursor:pointer;
+}
+
+.mobileLink:hover{
+  color:#09bdf9;
+}
+
+/* RESPONSIVE */
+
+@media (min-width:769px){
+  .hamburger{
+    display:none;
+  }
+}
+
+@media (max-width:768px){
+  .desktopNav{
+    display:none;
+  }
+}
