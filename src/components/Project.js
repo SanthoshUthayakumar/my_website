@@ -6,6 +6,7 @@ import ElectricBorder from "./ElectricBorder";
 import trustlocal from "../assets/trustlocal.png";
 import loading from "../assets/loading.jpg";
 import Portfolio from "../assets/Portfolio.png";
+import Privacy from "../assets/Privacy-mukkiyam.png";
 
 function Project() {
   const projects = [
@@ -13,7 +14,7 @@ function Project() {
       title: "Trust Local",
       image: trustlocal,
       description:
-        "Trust-Local is a location-based worker hiring platform that connects users with verified local workers.",
+        "Fullstack project (reactjs-nodejs-mysql).",
       github: "https://github.com/SanthoshUthayakumar/Trustlocal",
     },
     {
@@ -23,6 +24,14 @@ function Project() {
         "My Protfolio",
       github: "#",
     },
+    {
+      title: "Privacy Mukkiyam Bigil",
+      image: Privacy,
+      description:
+        "CyberSecurity Project for Data privacy",
+      github: "#",
+    },
+    
     {
       title: "Loading",
       image: loading,
