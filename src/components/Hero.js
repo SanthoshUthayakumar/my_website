@@ -87,7 +87,7 @@ pauseBetweenAnimations={1}
   </a>
 
   <a 
-    href="https://github.com/" 
+    href="https://github.com/SanthoshUthayakumar" 
     target="_blank" 
     rel="noopener noreferrer"
     style={styles.icon}

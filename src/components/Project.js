@@ -29,7 +29,7 @@ function Project() {
       image: Privacy,
       description:
         "CyberSecurity Project for Data privacy",
-      github: "#",
+      github: "https://github.com/SanthoshUthayakumar/Privacy-Mukkiyam-Bigil.git",
     },
     
     {
